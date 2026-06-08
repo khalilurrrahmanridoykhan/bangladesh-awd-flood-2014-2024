@@ -104,6 +104,8 @@ STL decomposition of the national monthly AWD series identified a consistent bie
 
 The trend component showed an upward shift in 2017 and 2022 corresponding to severe flood years, followed by return to baseline within 12–18 months. The COVID-19 disruption in 2020 is visible as a trough in the trend component that does not correspond to seasonal forcing.
 
+![**Figure 1.** STL seasonal decomposition of national monthly AWD cases, Bangladesh 2014–2024. Top panel: observed series; middle panel: seasonal component; bottom panel: trend component. Peak month: August; trough month: February. Shaded bands in 2017, 2020, and 2022 correspond to severe flood and COVID-19 disruption years.](../figures/fig1_seasonal_decomposition.png)
+
 ### 3.3 Geographic Distribution (Figure 2, Table 2)
 
 Ten-year average AWD incidence varied more than threefold across divisions (Table 2). Barishal division had the highest incidence (4,455 per 100,000 per year), followed by Sylhet (4,165), Mymensingh (2,706), Chattogram (2,643), Khulna (2,371), Rajshahi (1,972), Dhaka (1,743), and Rangpur (1,151).
@@ -127,11 +129,15 @@ The Barishal-to-Rangpur ratio of 3.87:1 illustrates the substantial geographic i
 
 A notable finding is the **Rangpur paradox**: despite Rangpur division being classified as high flood risk (37th parallel, Teesta River floodplain, recurrent northwest monsoon flooding), it carries the lowest AWD incidence in the study (1,151/100k). Possible explanations include the lower salinity environment of northern Bangladesh reducing V. cholerae survival, the absence of coastal transmission pathways, and potentially higher tube-well depth and lower arsenic contamination compared to southern divisions.
 
+![**Figure 2.** Choropleth map of 10-year average AWD incidence per 100,000 population by division, Bangladesh 2014–2024. Colour scale: yellow (low) to red (high). Division boundaries from geoBoundaries BGD ADM1 (CC0). Population denominators: BBS Census 2022.](../figures/fig2_division_map.png)
+
 ### 3.4 Flood Exposure and AWD Incidence (Figure 3)
 
 Across 88 division-year observations, Spearman rank correlation between flood duration (days above danger level) and AWD incidence per 100,000 was r = 0.247 (p = 0.020), indicating a statistically significant positive association. Severe flood years (2017, 2022) showed mean AWD incidence of 2,712 per 100,000, compared to 2,628 per 100,000 for non-severe years — a 3.2% difference at the division-year level.
 
 The moderate magnitude of this correlation reflects two data realities: (1) baseline geographic differences between divisions (e.g., Barishal vs Rangpur) dominate the variation in AWD incidence, with flood years adding a modulator effect on top of established endemic baselines; and (2) the flood data captures river-gauge-based days above danger level, which is a coarser measure than the household-level water contamination that directly causes diarrheal transmission.
+
+![**Figure 3.** Scatter plot of flood duration (days above danger level) vs AWD incidence per 100,000 by division-year, Bangladesh 2014–2024 (n = 88 observations). Each colour represents one division. Dashed line: OLS regression fit with 95% CI band. Severe flood years (2017, 2022) annotated in red. Spearman r = 0.247, p = 0.020.](../figures/fig3_flood_vs_awd.png)
 
 ### 3.5 Rainfall Lag Analysis (Figure 4, Table 3)
 
@@ -153,6 +159,8 @@ Cross-correlation analysis found that monthly rainfall significantly predicted A
 
 Coastal and delta divisions (Barishal, Khulna, Rajshahi, Rangpur) showed 0-month lag, suggesting immediate transmission of waterborne pathogens from flood events to clinical disease, possibly because these areas have lower background sanitation infrastructure and faster contamination pathways. Riverine and estuarine divisions (Chattogram, Dhaka, Sylhet, Mymensingh) showed a 1-month lag, consistent with a mechanism of delayed groundwater contamination following surface flooding. All correlations remained significant at 0.95 confidence bound (1.96/√132 = 0.171).
 
+![**Figure 4.** Cross-correlation function (CCF) between monthly rainfall and AWD cases for each division and nationally, Bangladesh 2014–2024 (lags 0–8 months). Blue bars: significant (p < 0.05); grey bars: non-significant. Red dashed lines: 95% CI bound (±0.171). Title of each panel shows division name and peak lag month.](../figures/fig4_lag_ccf.png)
+
 ### 3.6 Negative Binomial Regression (Figure 5, Table 4)
 
 The negative binomial regression model (AIC = 1335.5, BFGS optimizer, 88 observations) identified significant between-division differences in AWD incidence after controlling for population, flood exposure, and year effects.
@@ -170,6 +178,8 @@ The negative binomial regression model (AIC = 1335.5, BFGS optimizer, 88 observa
 The division fixed effect for Barishal was IRR = 2.556 (95% CI: 2.552–2.560, p < 0.001), indicating that after controlling for population size and year, Barishal has 155.6% higher AWD rate than Dhaka. This finding was robust across sensitivity analyses.
 
 The flood duration and monsoon rainfall IRRs were both 1.000 (p ≈ 1.0, not significant). This null finding requires interpretation in the context of the data construction: as described in the Methods, division-level AWD estimates were derived from national totals distributed by fixed division proportion weights. This methodology allows characterization of between-division differences (captured by the significant division FE) but does not preserve within-division year-to-year flood responsiveness required to detect flood-year IRRs. Real-time division-disaggregated EWARS data would be required to estimate flood IRRs at the division level.
+
+![**Figure 5.** Forest plot of incidence rate ratios (IRRs) from negative binomial regression, Bangladesh AWD 2014–2024 (n = 88 division-year observations). Reference: Dhaka division, year 2014. Horizontal lines: 95% confidence intervals. Red points: statistically significant (p < 0.05); grey points: non-significant. AIC = 1335.5.](../figures/fig5_regression_irr.png)
 
 ---
 
