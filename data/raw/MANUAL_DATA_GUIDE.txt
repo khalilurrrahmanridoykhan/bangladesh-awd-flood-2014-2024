@@ -1,0 +1,30 @@
+MANUAL DATA COLLECTION GUIDE
+==============================
+Generated: 2026-06-08
+
+EWARS (AWD cases) — automated scraping not possible (auth required)
+  Email: iedcr@iedcr.gov.bd
+  Request: weekly or annual AWD cases by division, 2014-2024
+
+  OR: Download IEDCR Annual Reports from https://iedcr.gov.bd/index.php/publication
+      Extract diarrhea/AWD table by division; save as data/raw/awd_annual_manual.csv
+      Columns: year, division, awd_cases, awd_deaths
+
+BWDB FFWC (flood data)
+  Visit: https://ffwc.bwdb.gov.bd/ → Reports → Annual Flood Reports
+  Extract: flood-affected area (km2) and flood duration (days) by division
+  Save as: data/raw/flood_annual_division.csv
+  Columns: year, division, flood_affected_km2, flood_duration_days, flood_severity
+
+BMD ENACTS (rainfall data)
+  Register at: https://dataportal.bmd.gov.bd/
+  Download: monthly rainfall by division, 2014-2024
+  Save as: data/raw/rainfall_monthly_division.csv
+  Columns: year, month, division, rainfall_mm
+
+Once data is collected, run analysis scripts in order:
+  python analysis/01_seasonal_decomposition.py
+  python analysis/02_division_incidence_map.py
+  python analysis/03_flood_vs_awd.py
+  python analysis/04_lag_cross_correlation.py
+  python analysis/05_regression_model.py

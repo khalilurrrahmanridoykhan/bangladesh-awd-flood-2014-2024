@@ -1,0 +1,8 @@
+Run: 2026-06-08T12:10:00.630291
+
+  EWARS: ONLINE but requires authentication — data not accessible publicly
+  DGHS Bulletins: 9 PDFs downloaded, no valid AWD data extracted. PDFs likely use image scans (not selectable text). Manual extraction needed.
+  NBPH: No AWD articles found
+  IEDCR Outbreak: Page not accessible
+
+  ACTION REQUIRED: See MANUAL_DATA_GUIDE.txt

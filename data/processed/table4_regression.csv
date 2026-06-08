@@ -1,0 +1,5 @@
+variable,coef,IRR,IRR_95CI_lower,IRR_95CI_upper,p_value,significant
+Intercept,-4.1903,0.0151,0.0151,0.0152,0.0,True
+Flood duration (per 10 days),-0.0,1.0,0.9995,1.0005,0.9992,False
+Monsoon rainfall (per 100 mm),0.0,1.0,0.9997,1.0003,1.0,False
+Division FE (highest: Barishal),0.9384,2.556,2.5521,2.5599,0.0,True

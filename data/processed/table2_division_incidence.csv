@@ -1,0 +1,9 @@
+division,mean_annual_cases,population,incidence_per_100k,flood_risk,data_quality
+Barishal,370919.1818181818,8325666,4455.1,Moderate,real
+Sylhet,416903.0,10009239,4165.2,High,real
+Mymensingh,307627.9090909091,11370000,2705.6,High,real
+Chattogram,751334.0909090909,28423019,2643.4,Moderate,real
+Khulna,369042.36363636365,15563000,2371.3,Low,real
+Rajshahi,364562.1818181818,18484858,1972.2,Low,real
+Dhaka,628432.3636363636,36054418,1743.0,Moderate,real
+Rangpur,180269.9090909091,15665000,1150.8,High,real
