@@ -1,7 +1,11 @@
 # Geographic and Environmental Determinants of Acute Watery Diarrhea Burden in Bangladesh: A 10-Year Ecological Analysis of Flood Exposure and Divisional Disease Incidence (2014–2024)
 
-**Author:** Independent Researcher, Dhaka, Bangladesh  
-**Contact:** khalilurrahmanridoykhan@gmail.com  
+**Authors:** Khalilur Rahman Ridoy Khan¹, Watan Rahman²
+
+¹Independent Researcher, Dhaka, Bangladesh  
+²Institute of Science and Technology, Dhaka, Bangladesh
+
+**Correspondence:** khalilurrahmanridoykhan@gmail.com  
 **Date:** June 2026  
 **Study type:** Ecological panel study  
 **Word count:** ~4,100 words
